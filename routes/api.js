@@ -1,10 +1,7 @@
-// const express = require("express");
-// const router = express.Router();
 const router = require("express").Router();
 const fs = require("fs");
 
 var data = require("../db/db.json");
-//var data = fs.readFileSync("../db/db.json", "utf-8");
 
 
 // notes
