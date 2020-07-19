@@ -1,11 +1,14 @@
 const router = require("express").Router();
 const fs = require("fs");
 
-var data = require("./db/db.json");
+var data = require("../db/db.json");
 console.log(data)
 
 // notes
 router.get("/api/notes", function (req, res) {
+  fs.readFile("./db/db.json", function(file){
+    console.log(file)
+  })
   return res.json(data);
 });
 
