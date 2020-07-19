@@ -26,11 +26,11 @@ router.post("/api/notes", function (req, res) {
   res.json(newNote);
 });
 
-router.delete("/api/notes/:id", function (req, res) {
-  var deleteNote = data.find(c=> c.id === parseInt(req.params.id));
-  var index = data.indexOf(deleteNote);
-  data.splice(index);
+// router.delete("/api/notes/:id", function (req, res) {
+//   var deleteNote = data.find(c=> c.id === parseInt(req.params.id));
+//   var index = data.indexOf(deleteNote);
+//   data.splice(index);
   
-});
+// });
 
 module.exports = router;
